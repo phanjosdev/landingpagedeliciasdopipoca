@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #FFF6E3;
+    color: #3B1C0C;
+    line-height: 1.6;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 90vh;
+    background: radial-gradient(circle, #F6C15A, #E67E22, #5A2E12);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5px 20px 60px 20px;
+    color: white;
+}
+
+.logo {
+    font-family: 'Playfair Display';
+    font-size: 24px;
+    /* menor que o h1 */
+    margin-bottom: 5px;
+}
+
+.hero h1 {
+
+    font-family: 'Playfair Display';
+    font-size: 60px;
+    /* maior que a logo */
+    margin-bottom: 7px;
+    line-height: 1.2;
+}
+
+.subtitle {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.hero-img {
+    width: 400px;
+    margin-top: 30px;
+}
+
+/* BOTÕES */
+
+.btn {
+    background: #2E6B4B;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .25);
+}
+
+/* HISTÓRIA */
+
+.section {
+    padding: 90px 20px;
+}
+
+.historia-container {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.story-img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.story-title {
+    font-family: 'Playfair Display';
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* PRODUTOS */
+
+.product-section {
+    padding: 90px 20px;
+    text-align: center;
+    color: white;
+}
+
+.product-main-img {
+    max-width: 420px;
+    width: 100%;
+    border-radius: 14px;
+    margin: 25px auto;
+    display: block;
+}
+
+.quality-badge {
+    display: inline-block;
+    background: #ffd27a;
+    color: #3B1C0C;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.doces {
+    background: linear-gradient(180deg, #3b1c0c, #5a2c12, #7a3e18);
+}
+
+.queijos {
+    background: linear-gradient(180deg, #1a0e07, #2b1409, #3b1c0c);
+}
+
+.section-title,
+.queijo-title {
+    font-family: 'Playfair Display';
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* CARDS */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.card-desc {
+    font-size: 14px;
+    margin-top: 8px;
+    color: #f0e4d2;
+}
+
+/* BOTÃO PRODUTO */
+
+.product-btn {
+    background: #ff8c2a;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.product-btn:hover {
+    transform: scale(1.05);
+}
+
+/* PROVA SOCIAL */
+
+.social-proof {
+    padding: 80px 20px;
+    background: #FFF6E3;
+    text-align: center;
+}
+
+.social-title {
+    font-family: 'Playfair Display';
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.testimonial {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.testimonial span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* CTA */
+
+.cta {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+/* POPUP */
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.popup-content {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 520px;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.queijo-texto1 {
+    font-family: 'Inter';
+    font-size: 18px;
+    color: #EAD8C4;
+    max-width: 600px;
+    margin: 40px auto 30px;
+    text-align: center;
+}
+
+.queijo-texto2 {
+    font-family: 'Inter';
+    font-size: 16px;
+    color: #D9C6B3;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.queijo-frase {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    color: #EAD8C4;
+    margin-top: 12px;
+    text-align: center;
+}
+
+.queijo-texto-principal {
+    margin-top: 20px;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:850px) {
+
+    .hero h1 {
+        font-size: 34px;
+        /* continua maior que a logo */
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .historia-container {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-img {
+        width: 116%;
+        margin-top: 30px;
+    }
+
+    .queijo-texto1 {
+        font-size: 16px;
+    }
+
+    .queijo-texto2 {
+        font-size: 15px;
+    }
+
+    .queijo-frase {
+        font-size: 15px;
+    }
+
+}
