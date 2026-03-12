@@ -178,6 +178,7 @@ body {
     padding: 80px 20px;
     background: #FFF6E3;
     text-align: center;
+    color: #3B1C0C;
 }
 
 .social-title {
@@ -319,5 +320,6 @@ body {
     .queijo-frase {
         font-size: 15px;
     }
+
 
 }
